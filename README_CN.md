@@ -146,13 +146,6 @@ docker run -d -p 3000:3000 \
 ```
 
 
-# 构建 lang-chatgpt 镜像，注意后面的点 "."
-docker build -t lang-chatgpt .
-# docker运行
-docker run -d -p 3002:3002  -e PORT=3002   -e OPENAI_API_KEY="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"   -e CODE="langtochatgpt"  lang-chatgpt
-docker run -d -p 3000:3000  -e PORT=3000   -e OPENAI_API_KEY="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"   -e CODE="langtochatgpt"  lang-chatgpt
-
-
 如果你需要指定其他环境变量，请自行在上述命令中增加 `-e 环境变量=环境变量值` 来指定。
 
 ### 本地部署
